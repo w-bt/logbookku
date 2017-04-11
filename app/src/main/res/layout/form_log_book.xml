@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <EditText
+        android:id="@+id/txt_judul"
+        android:hint="Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/log_type"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_ruang"
+        android:hint="Ruang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinner_type"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_ruang"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableRight="@android:drawable/ic_lock_idle_alarm"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date" />
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/txt_kegiatan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_tanggal"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="Kegiatan" />
+
+    <EditText
+        android:id="@+id/txt_next_kegiatan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_kegiatan"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="Pertemuan Berikut" />
+
+</RelativeLayout>

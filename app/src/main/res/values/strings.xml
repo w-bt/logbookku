@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LogBookKu</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="log_type">
+        <item>BIMBINGAN</item>
+        <item>PRESENTASI</item>
+        <item>PEMANTAUAN</item>
+        <item>PRASIDANG</item>
+        <item>SIDANG</item>
+        <item>LAINNYA</item>
+    </string-array>
+</resources>
